@@ -1,0 +1,21 @@
+{
+  "name": "odd-identity-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blain Smith <rebelgeek@blainsmith.com> (http://blainsmith.com/)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "cryo": "0.0.6",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "lodash": "^4.6.1",
+    "oddcast": "git@github.com:oddnetworks/oddcast.git",
+    "redis": "^2.5.3"
+  }
+}
