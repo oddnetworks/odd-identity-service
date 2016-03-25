@@ -19,6 +19,18 @@ identityService.initialize(bus, {
 });
 ```
 
+### API
+
+The service attaches Oddcast patterns to the `bus` you supply.
+
+**Fetch Organization**
+- Pattern: **{role: 'identity', cmd: 'fetchOrganization'}**
+- Payload: **{id: [ID]}**
+
+**Fetch Device**
+- Pattern: **{role: 'identity', cmd: 'fetchDevice'}**
+- Payload: **{id: [ID]}**
+
 ## Middleware
 
 Attaching middleware to a pre-existing Express app. This will create a `req.identity` object with `organization` and `device` properties.
