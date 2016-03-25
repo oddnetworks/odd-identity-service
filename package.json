@@ -15,7 +15,7 @@
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "lodash": "^4.6.1",
-    "oddcast": "git@github.com:oddnetworks/oddcast.git",
+    "oddcast": "^2.0.0",
     "redis": "^2.5.3"
   }
 }
