@@ -89,7 +89,7 @@ app.get('/', (req, res) => {
 app.listen(3000);
 ```
 
-## API
+## REST API
 
 There is also a fully Express app you can just run without writing any code.
 
@@ -98,5 +98,5 @@ There is also a fully Express app you can just run without writing any code.
 * REDIS_URI: the URI of your Redis server where the data lives
 
 ```
-node api.js
+node server.js
 ```

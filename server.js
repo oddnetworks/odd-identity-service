@@ -6,7 +6,7 @@ const express = require('express');
 const service = require('./service');
 
 const bus = oddcast.bus();
-const api = express();
+const server = express();
 
 bus.requests.use({}, oddcast.inprocessTransport());
 
@@ -16,12 +16,12 @@ service.initialize(bus, {
 	}
 });
 
-api.use(service.router(bus));
+server.use(service.router(bus));
 
 if (!module.parent) {
-	api.listen(process.env.PORT, (err) => {
+	server.listen(process.env.PORT, (err) => {
 		console.log('Identity API running on port ' + process.env.PORT);
 	});
 };
 
-module.export = api;
+module.export = server;
