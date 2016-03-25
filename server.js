@@ -20,7 +20,7 @@ server.use(service.router(bus));
 
 if (!module.parent) {
 	server.listen(process.env.PORT, (err) => {
-		console.log('Identity API running on port ' + process.env.PORT);
+		console.log('Identity Server running on port ' + process.env.PORT);
 	});
 };
 
